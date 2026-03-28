@@ -6,6 +6,7 @@ import type { Env } from './types.js';
 import memory from './routes/memory.js';
 import sessions from './routes/sessions.js';
 import projects from './routes/projects.js';
+import facts from './routes/facts.js';
 
 const app = new Hono<{ Bindings: Env }>();
 
@@ -35,6 +36,7 @@ app.get('/health', (c) => c.json({ status: 'ok' }));
 app.route('/v1/memory', memory);
 app.route('/v1/sessions', sessions);
 app.route('/v1/projects', projects);
+app.route('/v1/facts', facts);
 
 // 404 handler
 app.notFound((c) => {
