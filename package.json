@@ -1,0 +1,24 @@
+{
+  "name": "ctxl",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "pnpm -r --parallel dev",
+    "dev:api": "pnpm --filter @ctxl/api dev",
+    "dev:web": "pnpm --filter @ctxl/web dev",
+    "build": "pnpm -r build",
+    "typecheck": "pnpm -r typecheck",
+    "test": "vitest",
+    "test:run": "vitest run",
+    "deploy:api": "pnpm --filter @ctxl/api deploy",
+    "db:migrate": "pnpm --filter @ctxl/api db:migrate"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.3",
+    "vitest": "^3.0.5"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "packageManager": "pnpm@10.33.0"
+}

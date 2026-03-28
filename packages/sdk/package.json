@@ -1,0 +1,23 @@
+{
+  "name": "@ctxl/sdk",
+  "version": "0.1.0",
+  "description": "Official SDK for Ctxl — AI Memory & Context as a Service",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": ["ai", "memory", "context", "llm", "agent", "sdk"],
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.7.3"
+  }
+}

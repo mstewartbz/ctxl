@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #0a0a0f;
+  --color-bg-card: #12121a;
+  --color-bg-code: #1a1a2e;
+  --color-border: #2a2a3e;
+  --color-text: #e4e4ef;
+  --color-text-dim: #8888a0;
+  --color-accent: #6c5ce7;
+  --color-accent-bright: #a29bfe;
+  --color-green: #00d2d3;
+  --color-green-dim: #00d2d340;
+  --font-mono: 'JetBrains Mono', 'Fira Code', 'SF Mono', monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: 'Inter', -apple-system, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: var(--color-accent);
+  color: white;
+}
+
+/* Code syntax highlighting */
+.code-keyword { color: #c792ea; }
+.code-string { color: #c3e88d; }
+.code-comment { color: #546e7a; }
+.code-function { color: #82aaff; }
+.code-property { color: #f07178; }
+.code-number { color: #f78c6c; }
+.code-punctuation { color: #89ddff; }
